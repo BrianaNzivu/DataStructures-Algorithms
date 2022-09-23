@@ -24,15 +24,16 @@ void display(){
 	}
 }
 
-//Using the selection sort method
-void insertSort() {
+//Using the bubble sort method
+void bubbleSort() {
 	for(i=0; i<n; i++) 
 	{
-		j=i;
-		while (array[j]<array[j-1])
+		for(j = 0; j<n-1; j++)
 		{
-			swap(array[j], array[j - 1]);
-			j--;
+			if(array[j] > array[j + 1])
+			{
+				swap(array[j], array[j + 1]);
+			}
 		}
 	}
 }
@@ -43,8 +44,8 @@ int main()
 	getValues();
 	cout<<"\noriginal unsorted values ";
 	display();
-	cout<<"\n Sorted values with insert sort ";
-	insertSort();
+	cout<<"\n Sorted values with bubble sort ";
+	bubbleSort();
 	display();	
 
 }
