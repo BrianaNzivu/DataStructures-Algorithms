@@ -1,4 +1,4 @@
-// Working with arrays - Sorting an object using functions
+// Working with arrays - Sorting using selection sort an object using functions
 //Prepared by Nzivu Briana
 
 #include<iostream>
@@ -6,6 +6,7 @@ using namespace std;
 int i, j, n;
 int array[100];
 
+//Get values from user
 void getValues(){
 	cout<<"How many values do you have? ";
 	cin>>n;
@@ -16,32 +17,37 @@ void getValues(){
 	}
 }
 
+//Display array output
 void display(){
 	for(i=0; i<n; i++){
 		cout<<array[i]<<' ';
 	}
 }
 
-void selectionSort(){
-	for(i=0; i<n; i++)
+//Using the selection sort method
+void selectionSort() {
+	for(i=0; i<n; i++) 
 	{
 		int minpos = i;
-		for(j=i+1; j<n; j++)
+		for (j=i+1; j<n; j++)
 		{
 			if(array[j]<array[minpos])
 			{
-				minpos = j;
+			minpos = j;	
 			}
+			swap(array[minpos], array[i]);
 		}
-		swap(array[minpos],array[i]);
 	}
 }
+	
 
-int main(){
+int main() 
+{
 	getValues();
 	cout<<"\noriginal unsorted values ";
 	display();
-	cout<<"\noriginal sorted values ";
+	cout<<"\n Sorted values with selecton sort ";
 	selectionSort();
-	display();
+	display();	
+
 }
