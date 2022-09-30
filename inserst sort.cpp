@@ -1,4 +1,4 @@
-// Working with arrays - Sorting using insert sort an object using functions
+// Working with arrays - Sorting using selection sort an object using functions
 //Prepared by Nzivu Briana
 
 #include<iostream>
