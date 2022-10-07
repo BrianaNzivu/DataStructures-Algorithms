@@ -47,9 +47,9 @@ int main()
 	int i, n;
 	string item;
 	linkedlist usiu;
-	cout<<"How many values that you want to link";
+	cout<<"How many strings do you want to link";
 	cin>>n;
-	cout<<"Enter values";
+	cout<<"Enter strings";
 	for(i=0; i<n; i++)
 	{
 		cin>>item;
