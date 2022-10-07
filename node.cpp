@@ -36,6 +36,13 @@ int main()
 	node3 -> next = node1;
 	node1 -> next = node2;
 	
-	cout<<head->data<<" ";
+	cout<<head->data<<" "<<"\n";
+//	cout<<tail->data<<" ";
+	
+	while(head!=NULL)
+	{
+		cout<<head->data<<" ";
+		head = head -> next;
+	}
 	
 }
