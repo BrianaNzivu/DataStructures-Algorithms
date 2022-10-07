@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 struct node{
-string data;
+int data;
 node * next;
 };
 
@@ -14,7 +14,7 @@ public:
 	tail = NULL;	
 	}
 	
-	void getData (string item)
+	void getData (int item)
 	{
 		node *newnode = new node ();
 		newnode -> data = item;
@@ -44,8 +44,7 @@ public:
 
 int main()
 {
-	int i, n;
-	string item;
+	int i, n, item;
 	linkedlist usiu;
 	cout<<"How many values that you want to link";
 	cin>>n;
