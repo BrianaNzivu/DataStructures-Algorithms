@@ -30,11 +30,14 @@ void insertSort()
 {
 	for (i = 0; i < n; i++)
 	{
-		j=i;
+		for (j=0; j<n-1; j++)
+		{
+			
 		while(myArray[j]<myArray[j-1])
 		{
 			swap(myArray[j], myArray[j-1]);
 			j--;
+		}
 		}
 	}
 }
