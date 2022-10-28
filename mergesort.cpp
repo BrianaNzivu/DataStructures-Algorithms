@@ -26,7 +26,7 @@ void merge (int arr[], int low, int mid, int high)
 {
 	i = low;
 	j = mid + 1;
-	int temp[high - low + 1];
+	int temp[n];
 	int k = low;
 	
 	while(i<=mid && j<=high)
